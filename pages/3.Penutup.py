@@ -1,6 +1,35 @@
 import streamlit as st
 
 # ===============================
+# 🌸 PINK GRADIENT SOFT BACKGROUND
+# ===============================
+page_bg = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #FFE0F4, #FFFFFF);
+    background-attachment: fixed;
+}
+
+[data-testid="stSidebar"] {
+    background: #FFE0F4;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+    color: #4A4A4A !important;
+}
+
+div.stButton > button {
+    background-color: #FFE0F4;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid #FFB5E2;
+}
+
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
+
+# ===============================
 # CSS Styling - DIPERBAIKI
 # ===============================
 st.markdown("""
@@ -94,4 +123,4 @@ with col4:
     </div>
     """, unsafe_allow_html=True) 
 
-    st.image("data/bigdata.jpg , width=750)
+    st.image("data/bigdata.jpg", width=750)
